@@ -67,6 +67,10 @@
         p {
             font-size: 14px;
         }
+
+        @media (max-width: 900px) {
+            padding: 2em 0;
+        }
     }
 
     .support_form {

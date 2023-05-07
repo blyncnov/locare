@@ -23,7 +23,7 @@ const Support = () => {
                 type="text"
                 name="school"
                 className={style.input}
-                placeholder="Type your first name"
+                placeholder="First name"
               />
             </div>
             <div className={style.grouped_data}>
@@ -31,7 +31,7 @@ const Support = () => {
                 type="text"
                 name="school"
                 className={style.input}
-                placeholder="Type your message "
+                placeholder="Message "
               />
             </div>
             <div className={style.support_button}>

@@ -54,6 +54,8 @@ const Footer = () => {
                   Still wanna hear from us, register to receive updates about
                   new development and services
                 </p>
+                <br />
+
                 <form className={style.newsletter_form}>
                   <input
                     type="email"
@@ -62,7 +64,7 @@ const Footer = () => {
                     placeholder="Weekly Newsletter"
                     required
                   />
-                  <button type="submit">Subscribe To Newsletter</button>
+                  <button type="submit">Subscribe </button>
                 </form>
               </div>
             </div>

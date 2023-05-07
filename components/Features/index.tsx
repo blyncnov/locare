@@ -11,7 +11,7 @@ import { OurPackage } from "../../data/Features";
 import Image from "next/image";
 
 // Image
-import MentorshipImage from "../../public/mentor-2.webp";
+import MentorshipImage from "../../public/search.jpg";
 
 // Icon Style
 const Icon_style = {

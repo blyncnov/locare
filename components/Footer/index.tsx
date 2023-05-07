@@ -61,7 +61,7 @@ const Footer = () => {
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Weekly Newsletter"
+                    placeholder="Locare Weekly Newsletter"
                     required
                   />
                   <button type="submit">Subscribe </button>

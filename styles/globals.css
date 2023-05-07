@@ -1,27 +1,54 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  line-height: normal;
+  scroll-timeline: inherit;
+  font-family: "Jost", sans-serif;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+  -moz-font-smoothing: antialiased;
+  scroll-behavior: smooth !important;
+  background-color: rgb(255, 255, 255);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary-color) !important;
+  background: url("../public/three.png"), url("../public/shape-02.svg");
+  background-repeat: no-repeat;
+  background-size: 100px, cover;
+  background-position: bottom center, top;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  position: relative !important;
+}
+
+@media (max-width: 768px) {
+  #main {
+    background: url("../public/shape-02.svg");
+    background-size: cover;
+    background-position: top;
+  }
 }

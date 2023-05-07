@@ -1,0 +1,123 @@
+.support_section {
+    position: relative;
+    z-index: 5;
+    line-height: 1.5;
+    background-color: none;
+
+    .support_container {
+        position: relative;
+        width: 100%;
+        max-width: 90%;
+        color: black;
+        border-radius: 4px;
+        display: grid;
+        gap: 2%;
+        grid-template-columns: 55% 43%;
+        margin: 0 auto -90px auto;
+        background-color: transparent;
+
+        h2 {
+            font-weight: 500;
+            font-size: calc(var(--heading-size) - 5pt) !important;
+        }
+
+        @media (max-width: 768px) {
+            padding: 1.5em 1.2em;
+
+            h2 {
+                text-align: start;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            width: 100%;
+            max-width: 100%;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .support_text_holder {
+        position: relative;
+        background-color: var(--white);
+        border-radius: 3px;
+        padding: 2em 1em;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: rgba(20, 21, 94, 0.1) 0px 1px 3px 0px, rgba(20, 21, 94, 0.06) 0px 1px 10px 2px;
+
+        h2 {
+            text-align: start;
+            font-size: 30px;
+            color: var(--primary-color) !important;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            @media (max-width: 900px) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .support_form {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 2em 1em;
+        border-radius: 3px;
+        background-color: var(--white);
+        box-shadow: rgba(20, 21, 94, 0.1) 0px 1px 3px 0px, rgba(20, 21, 94, 0.06) 0px 1px 10px 2px;
+
+        .grouped_data {
+            width: 100%;
+
+            .input,
+            select {
+                width: 100% !important;
+                padding: 1em;
+
+                &::placeholder {
+                    color: #111232 !important;
+                    opacity: 0.5;
+                    font-weight: 400;
+                }
+            }
+
+            select {
+                font-weight: 500 !important;
+            }
+        }
+
+        .support_button {
+            button {
+                width: 100%;
+                color: var(--white) !important;
+                background-color: var(--primary-color) !important;
+
+                &:hover {
+                    -o-font-smoothing: antialiased;
+                    text-rendering: optimizeSpeed;
+                    -moz-font-smoothing: antialiased;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            display: flex !important;
+            flex-direction: column !important;
+
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+}

@@ -1,38 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## locare
 
-## Getting Started
-
-First, run the development server:
+This is a Fullstack Web Application , created by Taiwo Boluwatife [`Blyncnov`](https://blyncnov.com/).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+A Webapp for Private and Secured Events
+# share with us
+locare
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Learn More locare
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+This `Project` is currently under development .
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Demo
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Live Site URl : [locare](https://locare.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## My Process
 
-## Learn More
+I started this `Project` by bootraping Next js and then installing scss .. I started by making the folder structure , l checked out web simplified about react folder structure, after few hours i made one myself. i fully Started with the Navigation Component and then the rest of the components.
 
-To learn more about Next.js, take a look at the following resources:
+## locare Was Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- NextJs
+- AOS / GSAP / Famer Motion
+- Vercel / railway
+- RapidAPI / OpenAI
+- Playwright test
+- SCSS Module
+- Mobile first workflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Time - Total development process
 
-## Deploy on Vercel
+- April 28 - till date
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Developer Information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website [`Blyncnov`](https://pro-blyncnov.vercel.app).
+- Twitter [`@jeremytechie`](https://twitter.com/jeremytechie).
+- Linkedin [`Taiwo Boluwatife`](https://linkedin.com/in/blyncnov).

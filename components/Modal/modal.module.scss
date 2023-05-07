@@ -1,0 +1,129 @@
+.modal {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh);
+    background-color: rgba(2, 0, 0, 0.585);
+    border-radius: 2px;
+
+    .modal_container {
+        width: 500px;
+        border-radius: 4px;
+        padding: 2em 1.4em;
+        color: #333333;
+        background-color: white;
+
+        .modal_top_row {
+            padding: 1em 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #33333323;
+        }
+
+        @media (max-width: 900px) {
+            width: 94% !important;
+        }
+    }
+}
+
+.auth_form {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    .group_field {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+
+        input,
+        textarea {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 14px .4em;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+            border-radius: 2px;
+            color: rgb(53, 61, 66);
+            border: 1px solid #3e393942;
+
+
+            &:active {
+                background-color: #F6F9FE;
+            }
+        }
+
+        textarea {
+            min-height: 100px;
+            max-height: 200px;
+        }
+
+        button {
+            color: white !important;
+            width: 100%;
+        }
+    }
+}
+
+
+.modal_scan_info {
+    p {
+        margin: .5em;
+        font-weight: 600;
+        font-size: 1.1rem;
+
+        span {
+            font-weight: 500;
+            opacity: .8;
+            color: #01040a;
+        }
+    }
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal_scan_top {
+    display: block !important;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.modal_scan_image_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .modal_scan_image {
+        width: 200px;
+        height: 200px;
+        border-radius: 4px;
+        background-color: #174296;
+        align-self: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+}

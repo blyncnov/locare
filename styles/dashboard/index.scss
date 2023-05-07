@@ -1,0 +1,107 @@
+.dashboard_overview_section {
+    padding: 1em 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    background-color: transparent;
+
+    .dashboard_overview_details {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 4px;
+        padding: 1em;
+        background-color: var(--primary-color);
+        background: url("../../public/confetti-doodles.svg");
+        background-position: center;
+        background-repeat: repeat;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+        .dashboard_user_info {
+            color: var(--white);
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+
+            div {
+                padding: .25em 0;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                font-weight: 400 !important;
+
+                li,
+                h4 {
+                    letter-spacing: 1.3px;
+                    font-weight: 400 !important;
+                }
+            }
+        }
+
+        @media (max-width: 900px) {
+            background: var(--primary-color) !important;
+            padding: 1em !important;
+        }
+    }
+}
+
+.dashboard_overview_cards {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    gap: 20px;
+
+    .dashboard_card {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        border-radius: 3px;
+        padding: 1em 1em 3em 1em;
+        background-color: white !important;
+        flex-basis: 1;
+        background: url("../../public/confei.svg");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        // box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1.3px;
+
+        div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            h1 {
+                color: #0e072a;
+                opacity: 1;
+                margin-left: 1.5em;
+            }
+        }
+
+        @media (max-width: 900px) {
+            padding: 1em 1em 3em 1em !important;
+        }
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.active_plan,
+.expired_plan {
+    color: white !important;
+    padding: .5em 3.5em;
+    border-radius: 3px;
+    font-size: 14px !important;
+    background-color: #28a745;
+}
+
+.expired_plan {
+    background-color: tomato;
+}
+
+.sck_text {
+    font-size: 14px;
+}

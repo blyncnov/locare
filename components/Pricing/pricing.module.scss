@@ -1,0 +1,134 @@
+.pricing_section {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 20px 0;
+
+    .subscriptions_plans {
+        .pricing_header {
+            width: 100%;
+            text-align: start;
+
+            h1 {
+                color: var(--primary-color) !important;
+                font-size: calc(var(--heading-size) - 5pt);
+            }
+
+            p {
+                opacity: .8;
+
+                @media (max-width: 900px) {
+                    margin-top: .5em;
+                }
+            }
+        }
+
+        .pricing_grid {
+            position: relative;
+            width: 100%;
+            margin: 2em 0;
+            padding: 1em 0;
+            display: grid;
+            gap: 50px;
+            grid-template-columns: repeat(3, 1fr);
+
+            .pricing_card {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                padding: 3px 3px 3px 3px;
+                color: var(--primary-color);
+                background-color: var(--secondary-color);
+                transition: all 0.1s ease-in-out;
+                box-shadow: rgba(20, 21, 94, 0.1) 0px 1px 3px 0px, rgba(20, 21, 94, 0.06) 0px 1px 10px 2px;
+
+
+                &:nth-child(2) {
+                    scale: 1.05;
+                    color: var(--primary-color);
+                    background-color: var(--secondary-color);
+
+                    @media (max-width: 768px) {
+                        scale: 1;
+                    }
+                }
+
+                .pricing_card_top_title {
+                    text-align: center;
+                    padding: 15px 0;
+                    font-weight: 600;
+                    letter-spacing: 1.2px;
+
+
+                }
+
+                .pricing_card_inner_section {
+                    color: black;
+                    padding: 1em 1em;
+                    width: 100%;
+                    min-height: calc(100% - 3.5em);
+                    border-radius: 8px 8px 4px 4px;
+                    background-color: var(--white);
+                    display: flex;
+                    gap: 30px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+
+                    .pricing_card_top {
+                        width: 100%;
+
+                        h1 {
+                            font-size: var(--heading-size);
+                            color: var(--secondary-color);
+                            margin-bottom: .3em;
+
+                            sub {
+                                font-size: 14px;
+                                font-weight: 400;
+                                opacity: .7;
+                            }
+                        }
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .pricing_card_middle {
+                        width: 100%;
+
+                        ul {
+                            padding: 1em;
+                        }
+
+                        li {
+                            padding: .4em 1em;
+                            list-style-type: square;
+                            font-size: 14px;
+                            opacity: .8;
+                        }
+                    }
+
+                    .pricing_card_bottom {
+                        width: 100%;
+
+                        button {
+                            width: 100%;
+                            color: var(--white) !important;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 900px) {
+                gap: 20px;
+                margin: .5em 0 !important;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}

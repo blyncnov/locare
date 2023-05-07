@@ -1,0 +1,85 @@
+.faq_container {
+    position: relative;
+    padding: 0 0 50px 0;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
+
+    .faq_top_container {
+        color: var(--primary-color) !important;
+        padding: 20px 0;
+
+        h1 {
+            font-size: calc(var(--heading-size) - 5pt);
+        }
+    }
+
+    .faq_tabs {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        .faq_section {
+            width: 100%;
+            padding: .5em 0;
+            background-color: #ffffff;
+            border-radius: 3px;
+            cursor: pointer;
+            box-shadow: rgba(228, 228, 241, 0.1) 0px 1px 3px 0px, rgba(232, 233, 243, 0.06) 0px 1px 10px 2px;
+            transition: all 1s ease-in-out;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.518);
+
+            .show_tab {
+                display: block;
+                line-height: 1.5;
+                font-size: 13px;
+                padding: 10px 0;
+                transition: all 1s ease-in-out;
+
+                p {
+                    max-width: 60%;
+
+                    @media (max-width: 768px) {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .hide_tab {
+                transition: all 1s ease-in-out;
+                display: none !important;
+            }
+
+            .faq_title_section {
+                width: 100%;
+                padding: .5em 0;
+                display: flex;
+                gap: 50px;
+                align-items: center;
+                justify-content: space-between;
+
+                .faq_title {
+                    line-height: 1.5;
+
+                    li {
+                        color: #201f1f;
+                        font-size: 16px;
+                        font-weight: 450;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 0 50px 0;
+    }
+}
+
+
+.tab_answer {
+    opacity: .8;
+    font-size: 14px;
+}

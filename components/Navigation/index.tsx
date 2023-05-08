@@ -62,7 +62,7 @@ const Naviagtion = () => {
               <div className={style.right_items}>
                 <Link href="/getting-started">
                   <button className={style.btn} id={style.primary}>
-                    Join Waitlist
+                    Book a demo
                   </button>
                 </Link>
               </div>

@@ -4,9 +4,28 @@ import Link from "next/link";
 // Naviagtion Style
 import style from "./Hero.module.scss";
 
+// Components
+import NearByScan from "../Modal/scanarea";
+
+// Redux
+import { useDispatch, useSelector } from "react-redux";
+import { SHOW_MODAL } from "../../redux/actions/action";
+
 const Hero = () => {
+  const dispatch = useDispatch();
+
+  // My Scanning Modal State From Redux State
+  const ScanModal = useSelector((state: any) => state.ModeReducer.isModalOpen);
+
+  // Open Modal Handler
+  const ShowModalHandler = () => {
+    console.log("Open Modal");
+    dispatch({ type: SHOW_MODAL });
+  };
+
   return (
     <>
+      {ScanModal && <NearByScan />}
       <div id="container">
         <div className={style.hero_container}>
           <div className={style.hero_section_cto}>
@@ -26,9 +45,9 @@ const Hero = () => {
                 <Link href="/auth/login">
                   <button data-btn="transparent">Get Started</button>
                 </Link>
-                <Link href="/dashboard">
-                  <button data-btn="primary">Book a demo</button>
-                </Link>
+                <div onClick={ShowModalHandler}>
+                  <button data-btn="primary">Discover Hospital</button>
+                </div>
               </div>
             </div>
             <div className={style.hero_image_illustration}>

@@ -16,6 +16,7 @@ export const modeReducers = (state = InitialState, action: any) => {
     case CLOSE:
       return {
         ...state,
+        isModalOpen: false,
         isSideBarOpen: false,
       };
 

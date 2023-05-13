@@ -45,6 +45,7 @@
 
                 span {
                     color: var(--primary-color);
+                    text-decoration: underline;
                 }
             }
 
@@ -90,6 +91,10 @@
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
+
+                        a {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -111,7 +116,7 @@
     }
 
     @media (max-width: 900px) {
-        padding: 0 !important;
+        padding: 0 .5em !important;
     }
 }
 

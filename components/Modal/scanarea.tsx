@@ -45,6 +45,9 @@ const NearByScan = () => {
           <div>
             <h2>Scanning...</h2>
           </div>
+          <span style={{ cursor: "pointer" }} onClick={CloseModalhandler}>
+            <FaTimes style={react_icon_style} />
+          </span>
         </div>
         <div className={style.content_section}>
           {["G", "J", "F"].map((data) => {
@@ -66,9 +69,6 @@ const NearByScan = () => {
         <div className={style.bottom_section}>
           <li>
             Scanning for the nearest hospitals in your area. <br />
-            <span style={{ cursor: "pointer" }} onClick={CloseModalhandler}>
-              <FaTimes style={react_icon_style} />
-            </span>
           </li>
         </div>
       </div>

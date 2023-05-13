@@ -77,7 +77,7 @@ const Login = () => {
                   <Link href="/auth/reset">Forgot your password?</Link>
                 </div>
                 <button type="submit">Log in</button>
-                <li style={{ border: "1px solid #F8FBFE", fontSize: "13px" }}>
+                <li style={{ fontSize: "13px" }}>
                   By continuing, you agree Locare <span>Terms of Service</span>{" "}
                   and <span>Privacy Policy.</span>
                 </li>

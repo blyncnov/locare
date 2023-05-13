@@ -46,7 +46,7 @@ const Hero = () => {
                   <button data-btn="transparent">Get Started</button>
                 </Link>
                 <div onClick={ShowModalHandler}>
-                  <button data-btn="primary">Discover Hospital</button>
+                  <button data-btn="primary">Quick Discovery </button>
                 </div>
               </div>
             </div>

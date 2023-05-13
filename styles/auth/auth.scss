@@ -3,6 +3,7 @@
     min-height: 100vh;
     padding: 20px 50px !important;
     background-color: #F8FBFE;
+    backdrop-filter: blur(10px);
 
     @media (max-width: 700px) {
         background-color: #ffffff;
@@ -17,6 +18,7 @@
         display: grid;
         gap: 10px;
         grid-template-columns: 1.5fr 450px;
+        backdrop-filter: blur(10px);
 
 
         @media (max-width: 1000px) {

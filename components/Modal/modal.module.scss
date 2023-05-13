@@ -10,6 +10,7 @@
     color: #ffffff !important;
     background-color: rgba(14, 14, 14, 0.6);
     z-index: 999999;
+    backdrop-filter: blur(4px);
 
     .modal_container {
         width: 100%;
@@ -19,19 +20,19 @@
         max-height: 80% !important;
         padding: 2em;
         border-radius: 3px;
-        background-color: rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
 
         /* Additional Background */
-        background-color: rgb(14, 14, 14);
+        background-color: rgba(14, 14, 14, 0.928);
         background-image:
             repeating-radial-gradient(circle at center bottom,
-                rgba(204, 204, 204, 0.035),
+                rgba(204, 204, 204, 0.03),
                 transparent, 15px, transparent 70px, transparent 15px);
         background-attachment: fixed;
+        backdrop-filter: blur(10px);
 
 
         .top_section {
@@ -54,6 +55,7 @@
             justify-content: center;
             flex-wrap: wrap;
             background-color: rgba(251, 251, 251, 0.01);
+
 
             .discovered_room {
                 position: relative;

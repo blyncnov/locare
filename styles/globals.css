@@ -28,10 +28,15 @@ body {
   position: relative;
   width: 100%;
   background-color: var(--primary-color) !important;
-  background: url("../public/three.png"), url("../public/shape-02.svg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../public/heart_help.png");
   background-repeat: no-repeat;
-  background-size: 100px, cover;
-  background-position: bottom center, top;
+  background-size: cover;
+  background-position: center, top;
 }
 
 #container {
@@ -39,17 +44,8 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  backdrop-filter: blur(5px);
 }
 
 section {
   position: relative !important;
-}
-
-@media (max-width: 768px) {
-  #main {
-    background: url("../public/shape-02.svg");
-    background-size: cover;
-    background-position: top;
-  }
 }

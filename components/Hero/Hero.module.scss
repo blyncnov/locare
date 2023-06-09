@@ -11,7 +11,7 @@
         width: 100%;
         display: grid;
         gap: 10%;
-        grid-template-columns: 1.6fr 1fr;
+        grid-template-columns: 1fr .4fr;
         align-items: center;
         justify-content: flex-start;
 
@@ -34,19 +34,50 @@
             .cto_desc {
                 width: auto;
                 opacity: .9;
+                font-size: 16px;
                 color: var(--white) !important;
             }
 
             .cto_action {
+                position: relative;
                 width: auto;
-                display: flex;
                 gap: 20px;
 
+                form {
+                    .join_waitlist {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr .4fr;
+                        padding: .4em .2em;
+                        background-color: white;
+                        border-radius: 3px;
+                        box-shadow: 0 5px 20px 0 rgba(37, 85, 152, 0.15);
 
-                button {
-                    width: 100%;
-                    color: var(--white) !important;
-                    border: 1px solid #536FA6 !important;
+                        input {
+                            border: none;
+                            outline: none;
+                            border-radius: 1px;
+                        }
+
+                        button {
+                            color: white !important;
+                            border: var(--secondary-color) !important;
+                            background-color: #32A2D2 !important;
+                        }
+
+                        @media (max-width: 768px) {
+                            grid-template-columns: 1fr .5fr;
+                        }
+                    }
+
+                    li {
+                        margin: 1em 0;
+                        font-size: 16px;
+                        color: white !important;
+                        display: flex;
+                        gap: 1em;
+                        align-items: center;
+                    }
                 }
 
                 @media (max-width: 1000px) {

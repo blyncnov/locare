@@ -2,7 +2,7 @@
 import { NavBarType } from "../types/types";
 
 // Navigation Logo
-export const LogoName: string = "Locare";
+export const LogoName: string = "CareFinder";
 
 // Navigation Information
 export const NavBarData: NavBarType[] = [
@@ -13,23 +13,18 @@ export const NavBarData: NavBarType[] = [
   },
   {
     id: 2,
-    title: "Features",
-    url: "features",
+    title: "About",
+    url: "About",
   },
   {
     id: 3,
-    title: "Pricing",
-    url: "pricing",
+    title: "Find Hospital",
+    url: "find",
   },
   {
     id: 4,
-    title: "FAQ",
-    url: "faq",
-  },
-  {
-    id: 5,
     title: "Support",
-    url: "support",
+    url: "Support",
   },
 ];
 

@@ -1,8 +1,9 @@
 import React from "react";
-import Link from "next/link";
 
 // Naviagtion Style
 import style from "./Hero.module.scss";
+
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 // Components
 import NearByScan from "../Modal/scanarea";
@@ -10,6 +11,7 @@ import NearByScan from "../Modal/scanarea";
 // Redux
 import { useDispatch, useSelector } from "react-redux";
 import { SHOW_MODAL } from "../../redux/actions/action";
+import Link from "next/link";
 
 const Hero = () => {
   const dispatch = useDispatch();
@@ -31,27 +33,43 @@ const Hero = () => {
           <div className={style.hero_section_cto}>
             <div className={style.hero_text}>
               <div className={style.cto_text}>
-                <h1>Find the Nearest Hospitals with Locare.</h1>
+                <h1>
+                  Find the nearest hospital to you and make an appointment.
+                </h1>
               </div>
               <div className={style.cto_desc}>
                 <p>
-                  Locare is your go-to tool for finding the nearest hospitals in
-                  your area. Whether you&apos;re looking for emergency care or
-                  just need to schedule a routine check-up, Locare has got you
-                  covered. Simply enter your location and let us do the rest.
+                  Discover Your Perfect Care: Find Your Hospital, Anytime,
+                  Anywhere! Whether you&apos;re looking for emergency care or
+                  just need to schedule a routine check-up.
                 </p>
               </div>
               <div className={style.cto_action}>
-                <Link href="/auth/login">
-                  <button data-btn="transparent">Get Started</button>
-                </Link>
-                <div onClick={ShowModalHandler}>
-                  <button data-btn="primary">Quick Discovery </button>
-                </div>
+                <>
+                  {/* {* FORM - SERACH FOR HOSPITAL*} */}
+                  <form method="GET">
+                    <div className={style.join_waitlist}>
+                      <input
+                        type="text"
+                        placeholder="Federal Medical Center, Ebutte Metta, Lagos State ..."
+                        name="hospital"
+                        onChange={(e) => e.target.value}
+                        required
+                      />
+                      <button type="submit">Search</button>
+                    </div>
+                    <Link href="/">
+                      <li>
+                        Learn more about CareFinder{" "}
+                        <HiOutlineArrowNarrowRight
+                          style={{ fontSize: "2em" }}
+                        />
+                      </li>
+                    </Link>
+                  </form>
+                  {/* {* FORM - ENDS*} */}
+                </>
               </div>
-            </div>
-            <div className={style.hero_image_illustration}>
-              {/* <Image src={SvgImage} alt="lottie" /> */}
             </div>
           </div>
         </div>

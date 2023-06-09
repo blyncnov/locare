@@ -8,9 +8,9 @@
   --black: #181818;
   --white: #ffffff;
   --black-100: #333333;
-  --primary-color: #344373;
-  --secondary-color: #536FA6;
-  --text-color: #14165d;
+  --primary-color: #32A2D2;
+  --secondary-color: #32A2D2;
+  --text-color: #32A2D2;
 
   --border: 1px solid #ccc;
   --shadow: 0 1px;
@@ -31,7 +31,7 @@ button {
   justify-content: center;
   gap: 1em;
   white-space: nowrap;
-  padding: 0.8em 2em;
+  padding: 10px 24px;
   border-radius: 3px;
   font-weight: 400;
   line-height: 1.5;
@@ -64,12 +64,12 @@ button[data-btn="transparent"] {
 }
 
 button:hover {
-  transform: translateY(2%) !important;
+  transform: scale(1.02) !important;
 }
 
 button:active {
   box-shadow: 0 5px 15px 0 rgba(37, 85, 152, 0.928);
-  transform: translateY(2%) !important;
+  transform: scale(1.02) !important;
 }
 
 input,

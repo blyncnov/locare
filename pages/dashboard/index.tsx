@@ -20,35 +20,9 @@ export default function Dashboard() {
       </header>
       <section className="dashboard_overview_section">
         <section className="dashboard_overview_cards">
-          <div className="dashboard_card">
-            <div>
-              <FaBalanceScaleLeft style={IconCardStyle} />
-              <h3>Data Balance</h3>
-            </div>
-            <div className="dashboard_socket_details">
-              <h1>30.2GB</h1>
-            </div>
-          </div>
-          <div className="dashboard_card">
-            <div>
-              <CiTimer style={IconCardStyle} />
-              <h3>Account status</h3>
-            </div>
-            <div className="dashboard_socket_details">
-              <h1 className={true ? "active_plan" : "expired_plan"}>
-                {true ? "Active" : "Expired"}
-              </h1>
-            </div>
-          </div>
-          <div className="dashboard_card">
-            <div>
-              <CgTimelapse style={IconCardStyle} />
-              <h3>Time Left</h3>
-            </div>
-            <div className="dashboard_socket_details">
-              <h1> {false ? "Unlimited" : "29days"}</h1>
-            </div>
-          </div>
+          <div className="dashboard_card"></div>
+          <div className="dashboard_card"></div>
+          <div className="dashboard_card"></div>
         </section>
       </section>
     </>

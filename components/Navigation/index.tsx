@@ -3,8 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 // React Icons
-import { BsTextWrap } from "react-icons/bs";
-import { HiViewfinderCircle } from "react-icons/hi2";
+import { FaBars } from "react-icons/fa";
 
 // Naviagtion Data
 import { NavBarData, LogoName } from "../../data/Naviagtion";
@@ -34,10 +33,7 @@ const Naviagtion = () => {
             <div className={style.navbar_container}>
               <div className={style.left_items}>
                 <div className={style.logo}>
-                  <Link href="/">
-                    <HiViewfinderCircle />
-                    {LogoName}
-                  </Link>
+                  <Link href="/">{LogoName}</Link>
                 </div>
                 <div className={style.list}>
                   <ul>
@@ -62,13 +58,19 @@ const Naviagtion = () => {
               <div className={style.right_items}>
                 <Link href="/getting-started">
                   <button className={style.btn} id={style.primary}>
-                    Book a demo
+                    Login
+                  </button>
+                </Link>
+
+                <Link href="/getting-started">
+                  <button className={style.btn} id={style.primary}>
+                    Signup
                   </button>
                 </Link>
               </div>
               <div className={style.hivee_hamburger}>
                 <div className="hivee_fold_hamburger">
-                  <BsTextWrap style={Iconstyle} />
+                  <FaBars style={Iconstyle} />
                 </div>
               </div>
             </div>

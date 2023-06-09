@@ -56,13 +56,13 @@ const Naviagtion = () => {
                 </div>
               </div>
               <div className={style.right_items}>
-                <Link href="/getting-started">
+                <Link href="/auth/login">
                   <button className={style.btn} id={style.primary}>
                     Login
                   </button>
                 </Link>
 
-                <Link href="/getting-started">
+                <Link href="/auth/register">
                   <button className={style.btn} id={style.primary}>
                     Signup
                   </button>

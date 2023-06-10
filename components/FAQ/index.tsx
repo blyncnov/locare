@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 // React Icons
-import { IoChevronDown } from "react-icons/io5";
-import { MdArrowForwardIos } from "react-icons/md";
+import { AiOutlinePlus } from "react-icons/ai";
+import { BiPlus } from "react-icons/bi";
 
 // FAQ data
 import { FAQQuestionAndAnswer } from "../../data/FAQ";
@@ -32,9 +32,9 @@ const FAQTab = ({ data }: any) => {
           </div>
           <div className={style.faq_toggle_option} onClick={HandleToggler}>
             {!isClicked ? (
-              <IoChevronDown style={Iconstyle} />
+              <AiOutlinePlus style={Iconstyle} />
             ) : (
-              <MdArrowForwardIos style={Iconstyle} />
+              <BiPlus style={Iconstyle} />
             )}
           </div>
         </div>

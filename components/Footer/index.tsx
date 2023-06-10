@@ -34,38 +34,33 @@ const Footer = () => {
                   and secure events and parties for individuals.
                 </p>
                 <br />
-                <div className={style.footer_grid_column}>
-                  <address>Contact Info</address>
-                  <div className={style.column_flex_details}>
-                    <p>5, Agbede, Olaitan/Sallyman Hostel</p>
-                  </div>
-                  <div className={style.column_flex_details}>
-                    <p>+234 (814) 9055 068</p>
-                  </div>
-                  <div className={style.column_flex_details}>
-                    <p>customercare@CareFinder.io</p>
-                  </div>
+              </div>
+              <div className={style.footer_grid_column}>
+                <h2>Contact Info</h2>
+                <div className={style.column_flex_details}>
+                  <p>5, Agbede, Olaitan/Sallyman Hostel</p>
+                </div>
+                <div className={style.column_flex_details}>
+                  <p>+234 (814) 9055 068</p>
+                </div>
+                <div className={style.column_flex_details}>
+                  <p>customercare@CareFinder.io</p>
                 </div>
               </div>
-
               <div className={style.footer_grid_column}>
-                <h2>Newsletter</h2>
-                <p>
-                  Still wanna hear from us, register to receive updates about
-                  new development and services
-                </p>
-                <br />
-
-                <form className={style.newsletter_form}>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="CareFinder Weekly Newsletter"
-                    required
-                  />
-                  <button type="submit">Subscribe </button>
-                </form>
+                <h2>Quick Links</h2>
+                <div className={style.column_flex_details}>
+                  <p>Home</p>
+                </div>
+                <div className={style.column_flex_details}>
+                  <p>Find Hospital</p>
+                </div>
+                <div className={style.column_flex_details}>
+                  <p>About</p>
+                </div>
+                <div className={style.column_flex_details}>
+                  <p>Support</p>
+                </div>
               </div>
             </div>
           </div>

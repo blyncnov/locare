@@ -26,12 +26,12 @@ const Footer = () => {
                 <div className={style.logo}>
                   <Link href="/">
                     <HiViewfinderCircle />
-                    Locare
+                    CareFinder
                   </Link>
                 </div>
                 <p>
-                  Locare is a company that specializes in organizing private and
-                  secure events and parties for individuals.
+                  CareFinder is a company that specializes in organizing private
+                  and secure events and parties for individuals.
                 </p>
                 <br />
                 <div className={style.footer_grid_column}>
@@ -43,7 +43,7 @@ const Footer = () => {
                     <p>+234 (814) 9055 068</p>
                   </div>
                   <div className={style.column_flex_details}>
-                    <p>customercare@locare.io</p>
+                    <p>customercare@CareFinder.io</p>
                   </div>
                 </div>
               </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Locare Weekly Newsletter"
+                    placeholder="CareFinder Weekly Newsletter"
                     required
                   />
                   <button type="submit">Subscribe </button>

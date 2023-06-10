@@ -19,11 +19,11 @@ const Register = () => {
             <h1>
               Find The Nearest Hospitals With{" "}
               <span>
-                <Link href="/">Locare</Link>
+                <Link href="/">CareFinder</Link>
               </span>
             </h1>
             <p>
-              Locare is your go-to tool for finding the nearest hospitals in
+              CareFinder is your go-to tool for finding the nearest hospitals in
               your area.
             </p>
           </div>
@@ -96,8 +96,8 @@ const Register = () => {
                 </div>
                 <button type="submit">Create account</button>
                 <li style={{ fontSize: "13px" }}>
-                  By continuing, you agree Locare <span>Terms of Service</span>{" "}
-                  and <span>Privacy Policy.</span>
+                  By continuing, you agree CareFinder{" "}
+                  <span>Terms of Service</span> and <span>Privacy Policy.</span>
                 </li>
               </form>
             </div>

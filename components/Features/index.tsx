@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 // Features Style
 import style from "./features.module.scss";
@@ -8,10 +10,10 @@ import { BsFillAwardFill } from "react-icons/bs";
 
 // Data
 import { OurPackage } from "../../data/Features";
-import Image from "next/image";
 
 // Image
-import MentorshipImage from "../../public/search.jpg";
+import Doc1 from "../../public/care/doc.jpeg";
+import Doc2 from "../../public/care/doc2.jpeg";
 
 // Icon Style
 const Icon_style = {
@@ -22,44 +24,44 @@ const Features = () => {
   return (
     <div id="container">
       <div className={style.feature_section}>
-        <div className={style.feature_header}>
-          <h1>Services We Offers:</h1>
-          <p>Unlock the Full Potential of Your Business with Our Services.</p>
-        </div>
         <div className={style.feature_grid_section}>
           <div className={style.feature_grid_container}>
             <div className={style.feature_column}>
-              <div className={style.feature_options}>
-                {OurPackage.map((data) => {
-                  return <FeatureAccordion key={data.id} data={data} />;
-                })}
+              <div className={style.feature_display}>
+                <div className={style.part_one}>
+                  <Image priority={true} src={Doc1} alt="mentorship" />
+                </div>
+                <div className={style.part_one}>
+                  <Image priority={true} src={Doc2} alt="mentorship" />
+                </div>
               </div>
             </div>
+
             <div className={style.feature_column}>
-              <div className={style.feature_display}>
-                <Image priority={true} src={MentorshipImage} alt="mentorship" />
+              <div className={style.feature_description}>
+                <>
+                  <h1>
+                    Welcome to <span>CareFinder</span>{" "}
+                  </h1>
+                  <p>
+                    Carefinder is a platform where users can search for
+                    hosiptals in their areas, export hospital details for your
+                    records and enhance your healthcare experience by connecting
+                    with others and sharing valuable resources.
+                  </p>
+
+                  <Link href="/services">
+                    <button className={style.btn} id={style.primary}>
+                      Our Services
+                    </button>
+                  </Link>
+                </>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
-
-const FeatureAccordion = (props: any) => {
-  return (
-    <>
-      <div className={style.feature_opt}>
-        <BsFillAwardFill style={Icon_style} />
-        <div className={style.feature_opt_content}>
-          <p> {props.data.package} </p>
-          <div className={style.feature_dropdown_content}>
-            <p>{props.data.description} </p>
-          </div>
-        </div>
-      </div>
-    </>
   );
 };
 

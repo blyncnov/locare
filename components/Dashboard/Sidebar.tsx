@@ -13,7 +13,7 @@ import { RiListSettingsFill, RiExchangeDollarFill } from "react-icons/ri";
 import { GiTrafficLightsReadyToGo } from "react-icons/gi";
 import { AiOutlinePoweroff } from "react-icons/ai";
 import { VscReferences } from "react-icons/vsc";
-import { HiViewfinderCircle } from "react-icons/hi2";
+import { SiAdguard } from "react-icons/si";
 
 // Icon Style
 const Iconstyle = {
@@ -52,8 +52,8 @@ const Sidebar = () => {
           <div className="dashboard_logo">
             <Link href="/dashboard" onClick={CloseSidebar}>
               <h2>
-                <HiViewfinderCircle />
-                <span>LOCARE</span>
+                <SiAdguard />
+                <span>CareFinder</span>
               </h2>
             </Link>
           </div>

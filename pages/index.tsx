@@ -13,11 +13,11 @@ export default function Dashboard() {
     <>
       <Head>
         <title>
-          Locare | Access all healthcare in Nigeria within your region!
+          CareFinder | Access all healthcare in Nigeria within your region!
         </title>
         <meta
-          name="  Locare | Access all healthcare in Nigeria within your region!"
-          content="Locare | healthcare"
+          name="  CareFinder | Access all healthcare in Nigeria within your region!"
+          content="CareFinder | healthcare"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

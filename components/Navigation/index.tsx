@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 // React Icons
 import { FaBars } from "react-icons/fa";
+import { SiAdguard } from "react-icons/si";
 
 // Naviagtion Data
 import { NavBarData, LogoName } from "../../data/Naviagtion";
@@ -13,11 +14,16 @@ import style from "./Navigation.module.scss";
 
 // Icon Style
 const Iconstyle = {
-  fontSize: "2em",
-  color: "#ffffff",
+  fontSize: "1em",
+  color: "#32A2D2",
   cursor: "pointer",
 };
 
+const BarStyle = {
+  fontSize: "2em",
+  color: "#32A2D2",
+  cursor: "pointer",
+};
 // Naviagtion Component
 const Naviagtion = () => {
   const router = useRouter();
@@ -33,6 +39,7 @@ const Naviagtion = () => {
             <div className={style.navbar_container}>
               <div className={style.left_items}>
                 <div className={style.logo}>
+                  <SiAdguard style={Iconstyle} />
                   <Link href="/">{LogoName}</Link>
                 </div>
                 <div className={style.list}>
@@ -70,7 +77,7 @@ const Naviagtion = () => {
               </div>
               <div className={style.hivee_hamburger}>
                 <div className="hivee_fold_hamburger">
-                  <FaBars style={Iconstyle} />
+                  <FaBars style={BarStyle} />
                 </div>
               </div>
             </div>

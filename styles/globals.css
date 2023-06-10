@@ -30,8 +30,8 @@ body {
   background-color: var(--primary-color) !important;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.7) 0,
-      rgba(0, 0, 0, 0.6) 100%
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.75) 100%
     ),
     url("../public/heart_help.png");
   background-repeat: no-repeat;

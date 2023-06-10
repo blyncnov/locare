@@ -17,7 +17,7 @@ const Iconstyle = {
 };
 
 const FAQTab = ({ data }: any) => {
-  const [isClicked, setIsClicked] = useState(true);
+  const [isClicked, setIsClicked] = useState(false);
 
   const HandleToggler = () => {
     setIsClicked(!isClicked);
